@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(10, 10, 25, 0.7), rgba(10, 10, 25, 0.9)),
+    url("mars.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  z-index: 0;
+}
+
+.input-container{
+    z-index: 100;
+}

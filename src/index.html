@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <title>OMDb Movie Search</title>
+  </head>
+
+  <body class="bg-black font-[Kanit]">
+
+    <!-- HEADER -->
+    <header class="px-4 pt-6">
+      <h1
+        class="text-6xl sm:text-8xl md:text-[120px] font-black tracking-tight 
+        bg-[linear-gradient(90deg,#b8b5c9,#6d4fa3,#a44a6e)] 
+        bg-clip-text text-transparent 
+        mix-blend-lighten opacity-50 text-center"
+      >
+        OMDb
+      </h1>
+    </header>
+
+    <!-- SEARCH INPUT -->
+    <div class="flex justify-center px-4 mt-6">
+      <input
+        id="searchInput"
+        class="w-full max-w-[520px] h-14 px-5 rounded-xl 
+        bg-white/10 backdrop-blur-md 
+        border border-white/20 
+        text-white placeholder-white/60 
+        focus:outline-none focus:ring-2 focus:ring-purple-500 
+        shadow-lg shadow-purple-500/10"
+        type="text"
+        placeholder="Search movie"
+      />
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex flex-col md:flex-row items-center md:items-start 
+    justify-center mt-10 text-white gap-8 px-4">
+
+      <!-- MOVIE IMAGE -->
+      <div class="w-full md:w-auto flex justify-center">
+        <img 
+          src="" 
+          id="img" 
+          alt="" 
+          class="rounded-lg max-w-[300px] w-full object-cover"
+        >
+      </div>
+
+      <!-- MOVIE DETAILS -->
+      <div class="max-w-[600px] w-full">
+
+        <!-- TITLE -->
+        <h2 
+          id="title"
+          class="font-bold text-3xl sm:text-4xl md:text-5xl 
+          text-center md:text-left"
+        ></h2>
+
+        <!-- GENRES -->
+        <div class="flex flex-wrap gap-3 mt-4">
+          <div class="bg-gray-800 text-center px-4 py-1.5 hidden rounded-full genre"></div>
+          <div class="bg-gray-800 text-center px-4 py-1.5 hidden rounded-full genre"></div>
+          <div class="bg-gray-800 text-center px-4 py-1.5 hidden rounded-full genre"></div>
+        </div>
+
+        <!-- PLOT -->
+        <p 
+          id="plot" 
+          class="mt-5 text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed"
+        ></p>
+
+        <!-- EXTRA INFO -->
+        <div class="flex flex-col gap-3 mt-6 hidden" id="info">
+
+          <div>
+            <span class="text-gray-500 text-lg">Director: </span>
+            <span class="text-white text-lg" id="director"></span>
+          </div>
+
+          <div>
+            <span class="text-gray-500 text-lg">Writers: </span>
+            <span class="text-white text-lg" id="writers"></span>
+          </div>
+
+          <div>
+            <span class="text-gray-500 text-lg">Stars: </span>
+            <span class="text-white text-lg" id="stars"></span>
+          </div>
+
+          <div>
+            <span class="text-gray-500 text-lg">IMDb Rating: </span>
+            <span class="text-white text-lg" id="rating"></span>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
