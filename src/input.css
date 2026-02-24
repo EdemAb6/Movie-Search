@@ -5,7 +5,7 @@ body {
   min-height: 100vh;
   background:
     linear-gradient(rgba(10, 10, 25, 0.7), rgba(10, 10, 25, 0.9)),
-    url("mars.png");
+    url("../mars.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

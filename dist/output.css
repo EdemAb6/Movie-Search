@@ -605,7 +605,7 @@
 body {
   z-index: 0;
   background-color: #0000;
-  background-image: linear-gradient(#0a0a19b3, #0a0a19e6), url(mars.png);
+  background-image: linear-gradient(#0a0a19b3, #0a0a19e6), url(/mars.png);
   background-position: 50%;
   background-repeat: repeat, repeat;
   background-size: cover;
